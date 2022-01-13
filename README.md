@@ -13,10 +13,19 @@ All of these steps need to be logged using AWS CloudShell.
 git clone https://github.com/joelcpinheiro/eks_porfolio.git
 ```
 
-#### 2. Now you need to run the command below to perform a new EKS:
+#### 2. Install eksctl executing these commands:
 
 ```sh
+curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+sudo mv /tmp/eksctl /usr/local/bin
+eksctl version
 
+```
+
+#### 2. Now you need to run the command below to perform a new EKS Cluster:
+
+```sh
+eksctl install xxx
 
 ```
 
