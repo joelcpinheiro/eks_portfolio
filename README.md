@@ -16,7 +16,7 @@ You must have a ```key par``` on AWS, it will be used to insert on ```variables.
 git clone https://github.com/joelcpinheiro/eks_terraform.git
 ```
 
-#### 5. Now you need to install Terraform to perform a new EC2 Instance:
+#### 5. Now you need to install Terraform to perform a new EKS:
 
 ```sh
 curl https://releases.hashicorp.com/terraform/0.12.24/terraform_0.12.24_linux_amd64.zip -o terraform.zip;
@@ -30,12 +30,6 @@ mv terraform /usr/bin/
 terraform init
 terraform plan
 terraform apply
-```
-
-#### Now you must to use your key par with .pem extension(created earlier) and connect on your new EC2 Instance, as a example below:
-
-```sh
-ssh -i "keyparAWS.pem" centos@ecIPAWS.compute-1.amazonaws.com
 ```
 
 #### Don't forget to save your .tfstate file in a safe place.
